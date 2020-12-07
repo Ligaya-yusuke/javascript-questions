@@ -16,7 +16,7 @@ function answer () {
   tasks.forEach((value, index) => {
     console.log(`${index} :  ${value}`);
   });
-};
+}
 answer();
 
 window.prompt('「確認,追加,削除,終了」の4つのいずれかを入力してください');
