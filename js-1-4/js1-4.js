@@ -12,14 +12,14 @@ const tasks = [
 function answer () {  
   console.log(title); 
   tasks.forEach((value, index) => {
-    console.log(`${index} : [内容]${tasks[index].item}` + `、` + `[ジャンル]${tasks[index].genre}`);
+    console.log(`${index} : [内容]${value.item}` + `、` + `[ジャンル]${value.genre}`);
   })
   const task = window.prompt('タスクを入力してください');
   const type = window.prompt('ジャンルを入力してください');
   tasks.push({item: task, genre: type });
   console.log(title); 
   tasks.forEach((value, index) => {
-    console.log(`${index} : `, `[内容]${tasks[index].item} ` + `、` +  `[ジャンル]${tasks[index].genre}`);
+    console.log(`${index} : `, `[内容]${value.item} ` + `、` +  `[ジャンル]${value.genre}`);
   });
 }
 answer();
