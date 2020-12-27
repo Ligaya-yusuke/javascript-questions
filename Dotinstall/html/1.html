@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Basics</title>
+</head>
+<body>
+  <!-- 表示名 -->
+  <!-- <label for="name">名前：</label> -->
+  <!-- <label for="name">名前： <input type="text" id="name"></label> -->
+  <!-- <label>名前：<input type="text"></label> -->
+
+  <label for ="color">好きな色</label>
+  ドロップダウンリスト
+<!-- <select id ="color">   -->
+  <!-- sizeは表示数、multipleは複数選択可能 -->
+  <select id ="color" size="3" multiple>
+  <!-- ドロップダウンリストの中身 -->
+  <option>色1</option>
+  <option>色2</option>
+  <option selected>色3</option> <!--最初に表示selected-->
+</select>
+  <!-- 入力部品をグループ化するための枠 -->
+  <fieldset>
+    <legend>お使いのスマホ</legend>
+    チェックボックス
+    <label><input type="checkbox">iphone</label>
+    <!-- 最初に選択済 -->
+    <label><input type="checkbox" checked>Android</label>
+    <label><input type="checkbox">その他</label>
+  </fieldset>
+
+    ラジオボタン
+    <!-- name属性をつけてラジオボタンを一つしか選択できないように設定 -->
+    <label><input type="radio" name="phone">iphone</label>
+    <!-- 最初に選択済 -->
+    <label><input type="radio" name="phone" checked>Android</label>
+    <label><input type="radio" name="phone">その他</label>
+
+    モダン部品、使用できないブラウザがあり注意
+    色選択
+    <p><input type="color"></p>
+    日付選択
+    <p><input type="date"></p>
+    番号入力
+    <p><input type="number"></p>
+    範囲選択
+    <p><input type="range"></p>
+
+    ボタン
+    <!-- 画像を入れられる -->
+    <input type="button" value="OK">
+    <input type="button" value="OK" disabled>
+    <button>ボタン</button>
+
+</body>
+</html>
